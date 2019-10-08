@@ -1,22 +1,49 @@
 const numberOfDrumButtons = document.querySelectorAll(".drum").length
-const audio = new Audio('./sounds/kick-bass.mp3')
 
-for (let i = 0; i < numberOfDrumButtons; i++) {
-    document.querySelectorAll("button")[i].addEventListener("click",function () {
-        let buttonInnerHTML = this.innerHTML
-
-        switch (buttonInnerHTML) {
-            case 'w':
-                alert('w was just clicked')          
-                break;
-        
-            default:
-                break;
-        }
-    })
+for (let i = 0 i < numberOfDrumButtons i++) {
+  document.querySelectorAll("button")[i].addEventListener("click", handleClick)
 }
 
-//     function handleClick() {
-//         audio.play();
-//     }
-// }
+function handleClick() {
+  let buttonInnerHTML = this.innerHTML
+
+  switch (buttonInnerHTML) {
+    case "w":
+            let crash = new Audio("./sounds/crash.mp3")
+            crash.play()
+        break
+
+    case "a":
+            let kickBass = new Audio("./sounds/kick-bass.mp3")
+            kickBass.play()
+        break
+
+    case "s":
+            let audio = new Audio("./sounds/snare.mp3")
+            audio.play()
+        break
+
+    case "d":
+            let audio = new Audio("./sounds/tom1.mp3")
+            audio.play()
+        break
+
+    case "j":
+            let audio = new Audio("./sounds/tom2.mp3")
+            audio.play()
+        break
+
+    case "k":
+            let audio = new Audio("./sounds/tom3.mp3")
+            audio.play()
+        break
+
+    case "l":
+            let audio = new Audio("./sounds/tom4.mp3")
+            audio.play()
+        break
+
+    default:
+      break
+  }
+}
