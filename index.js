@@ -19,28 +19,28 @@ function handleClick() {
         break
 
     case "s":
-            let audio = new Audio("./sounds/snare.mp3")
-            audio.play()
+            let snare = new Audio("./sounds/snare.mp3")
+            snare.play()
         break
 
     case "d":
-            let audio = new Audio("./sounds/tom1.mp3")
-            audio.play()
+            let tom1 = new Audio("./sounds/tom1.mp3")
+            tom1.play()
         break
 
     case "j":
-            let audio = new Audio("./sounds/tom2.mp3")
-            audio.play()
+            let tom2 = new Audio("./sounds/tom2.mp3")
+            tom2.play()
         break
 
     case "k":
-            let audio = new Audio("./sounds/tom3.mp3")
-            audio.play()
+            let tom3 = new Audio("./sounds/tom3.mp3")
+            tom3.play()
         break
 
     case "l":
-            let audio = new Audio("./sounds/tom4.mp3")
-            audio.play()
+            let tom4 = new Audio("./sounds/tom4.mp3")
+            tom4.play()
         break
 
     default:
