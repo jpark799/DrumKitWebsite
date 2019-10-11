@@ -50,7 +50,7 @@ function handleClick() {
 
 
 for (let i = 0; i < numberOfDrumButtons; i++) {
-    document.querySelectorAll("button")[i].addEventListener("keypress", handleKeypress)
+    document.querySelectorAll("button")[i].addEventListener("keydown", handleKeypress)
 }
 
 function handleKeypress() {
