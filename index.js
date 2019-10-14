@@ -49,7 +49,7 @@ function handleClick() {
   }
 }
 
-document.addEventListener("keypress", logKey);
+document.addEventListener("keydown", logKey);
 
 function logKey(e) {
   let keyPressed = e.code;
