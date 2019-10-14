@@ -44,6 +44,7 @@ function handleClick() {
       break;
 
     default:
+      console.log(`${buttonInnerHTML}`)
       break;
   }
 }
