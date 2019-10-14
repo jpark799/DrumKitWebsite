@@ -44,56 +44,54 @@ function handleClick() {
       break;
 
     default:
-      console.log(`${buttonInnerHTML}`)
+      console.log(`${buttonInnerHTML}`);
       break;
   }
 }
 
-const log = document.getElementById('log')
-
-document.addEventListener('keypress', logKey)
+document.addEventListener("keypress", logKey);
 
 function logKey(e) {
-  let keyPressed = e.code
+  let keyPressed = e.code;
 
   switch (keyPressed) {
     case "KeyW":
-        const crash = new Audio("./sounds/crash.mp3");
-        crash.play();
+      const crash = new Audio("./sounds/crash.mp3");
+      crash.play();
       break;
-  
+
     case "KeyA":
-        const kickBass = new Audio("./sounds/kick-bass.mp3");
-        kickBass.play();
+      const kickBass = new Audio("./sounds/kick-bass.mp3");
+      kickBass.play();
       break;
-  
+
     case "KeyS":
-        const snare = new Audio("./sounds/snare.mp3");
-        snare.play();
-    break;
-  
+      const snare = new Audio("./sounds/snare.mp3");
+      snare.play();
+      break;
+
     case "KeyD":
-        const tom1 = new Audio("./sounds/tom-1.mp3");
-        tom1.play();
+      const tom1 = new Audio("./sounds/tom-1.mp3");
+      tom1.play();
       break;
-  
+
     case "KeyJ":
-        const tom2 = new Audio("./sounds/tom-2.mp3");
-        tom2.play();
+      const tom2 = new Audio("./sounds/tom-2.mp3");
+      tom2.play();
       break;
-  
+
     case "KeyK":
-        const tom3 = new Audio("./sounds/tom-3.mp3");
-        tom3.play();
+      const tom3 = new Audio("./sounds/tom-3.mp3");
+      tom3.play();
       break;
-  
+
     case "KeyL":
-        const tom4 = new Audio("./sounds/tom-4.mp3");
-        tom4.play();
+      const tom4 = new Audio("./sounds/tom-4.mp3");
+      tom4.play();
       break;
-  
+
     default:
-        console.log(`${keyPressed}`)
+      console.log(`${keyPressed}`);
       break;
   }
 }
